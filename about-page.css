@@ -1,0 +1,213 @@
+body{
+    background-image: url('img/jungle.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    font-family: Helvetica, sans-serif;
+}
+/* Navigation Bar */
+
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+
+}
+
+html body nav{
+    background: rgba(230,230,230,0.1);
+    backdrop-filter: blur(5px);
+    height: 80px;
+    width: 100%;
+    position: sticky;
+    z-index: 1000;
+    /* border-radius: 0px 0px 20px 20px; */
+
+}
+
+label.logo{
+    color:  rgba(191, 255, 205,0.8);
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+    text-shadow: 0px 0px 30px rgb(191, 255, 205);
+    cursor: pointer;
+
+}
+
+nav ul{
+    float: right;
+    /* margin-right: 20px; */
+   
+}
+
+
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 10px;
+}
+
+nav ul li a{
+    color: rgba(191, 255, 205, 0.8);
+    font-size: 17px;
+    text-transform: uppercase;
+    padding: 7px 13px;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+
+
+nav ul li a:hover{
+    color: black;
+    background-color: rgba(191, 255, 205, 0.8);
+    transition: .5s;
+}
+
+nav ul li a:active{
+     background: none;
+}
+
+.menu-btn{
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+
+/* tablet screen size */
+@media (max-width: 952px){
+    label.logo{
+        font-size: 30px;
+        padding-left: 50px;
+
+    }
+
+    nav ul li a{
+        font-size: 16px;
+
+    }
+}
+
+/* mobile screen size (going backto mobile view)*/
+@media (max-width: 858px){
+    .menu-btn{
+        display: block;
+    }
+
+    nav ul{
+        position: sticky;
+        margin-top: 20px;
+        width: 100%;
+        height: 500px;
+        background-color: rgb(191, 255, 205);
+        text-align: center;
+        display: none;
+        transition: 0.5s;
+        border-radius: 20px;
+        border: 2px solid rgba(200,200,200,0.3);
+        
+        
+    }
+
+    nav ul li{
+        display: block;
+
+    }
+
+    nav ul li a{
+        color: black;
+        font-size: 22px;
+        font-weight: 400;
+    }
+
+    nav ul li a:hover{
+        background: rgb(0,0,0);
+        color: white;
+       
+    }
+
+    nav ul li a:active{
+        background: none;
+    }
+}
+
+/* logo and establishment year */
+section .logo-container{
+    /* background-color: rgba(230,230,230,0.1); */
+    backdrop-filter: blur(5px);
+    height: 450px;
+    border: 1px solid rgba(191, 255, 205,0.5);
+    border-radius: 50px;
+}
+
+section .logo-container img{
+    display: block;
+    width: 250px;
+    margin: 15px auto;
+    
+}
+
+section .logo-container p{
+    color: rgb(191, 255, 205);
+    text-align: center;
+    font-size: 23px;
+}
+
+section .logo-container button{
+    background-color: rgb(191, 255, 205);
+    padding: 15px 35px;
+    border: none;
+    border-radius: 40px;
+    display: block;
+    margin: auto;
+    font-weight: 500;
+    transition: 0.5s;
+}
+
+section .logo-container button:hover{
+    box-shadow: 0px 0px 10px rgb(191, 255, 205);
+}
+
+section .logo-container button:active{
+    box-shadow: none;
+}
+
+
+
+
+/* shop location */
+section .shop-location{
+    /* background-color: rgba(230,230,230,0.1); */
+    backdrop-filter: blur(5px);
+    border:1px solid rgba(191, 255, 205,0.5);
+    border-radius: 50px;
+    height: 450px;
+}
+
+section .shop-location p{
+    color: rgb(191, 255, 205);
+    text-align: center;
+    margin-top: 20px;
+    font-size: 28px;
+    font-weight: bold;
+    
+}
+
+section .shop-location img{
+    display: block;
+    margin: 30px auto;
+    width: 90%;
+}
+
+section .shop-location img:hover{
+    transform: translateY(-30px);
+    transition: 0.5s;
+}
+
+
